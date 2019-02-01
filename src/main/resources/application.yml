@@ -1,0 +1,11 @@
+mybatis:
+  typeAliasesPackage: lxm.model
+  mapperLocations: classpath:mapper/*.xml
+
+spring:
+  application:
+    name: test
+  profiles:
+    active: testing
+
+
