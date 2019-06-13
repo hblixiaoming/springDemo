@@ -1,3 +1,6 @@
+server:
+  context-path: /springDemo
+
 mybatis:
   typeAliasesPackage: lxm.model
   mapperLocations: classpath:mapper/*.xml
@@ -8,4 +11,5 @@ spring:
   profiles:
     active: testing
 
-
+logging:
+  config: classpath:log4j2.yml
