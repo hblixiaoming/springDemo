@@ -22,6 +22,6 @@
     <dubbo:service retries="0" interface="lxm.service.UserService" ref="userService" />
 
     <!-- 消费者 -->
-    <!--<dubbo:reference id="testService" check="false" interface="lxm.service.UserService"/>-->
+    <!--<dubbo:reference id="testService" check="false" timeout="1000" retries="3" interface="lxm.service.UserService"/>-->
 
 </beans>

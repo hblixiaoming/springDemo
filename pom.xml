@@ -21,6 +21,8 @@
         <jedis.version>2.9.0</jedis.version>
         <dubbo.version>2.5.0</dubbo.version>
         <zookeeper.version>3.4.5</zookeeper.version>
+        <jedis.version>2.8.1</jedis.version>
+        <apache-commons-lang3.version>3.4</apache-commons-lang3.version>
     </properties>
     <dependencies>
         <dependency>
@@ -132,6 +134,15 @@
             <artifactId>zkclient</artifactId>
             <version>0.10</version>
         </dependency>
-
+        <dependency><!--redis 客户端-->
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
+        <dependency><!--是基于JDK API开发一系列公共基础类，涉及到数组工具类，字符串工具类，字符工具类，数学方面，时间日期工具类，异常，事件等工具类-->
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${apache-commons-lang3.version}</version>
+        </dependency>
     </dependencies>
 </project>
