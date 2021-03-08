@@ -11,12 +11,12 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.boot.version>1.4.1.RELEASE</spring.boot.version>
+        <spring.boot.version>2.0.6.RELEASE</spring.boot.version>
         <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
         <mybatis-spring-boot.version>1.1.1</mybatis-spring-boot.version>
         <fastjson.version>1.2.28</fastjson.version>
         <slf4j.version>1.7.21</slf4j.version>
-        <log4j.version>2.6.1</log4j.version>
+        <log4j.version>2.9.0</log4j.version>
         <aspectj.version>1.8.14</aspectj.version>
         <jedis.version>2.9.0</jedis.version>
         <dubbo.version>2.5.0</dubbo.version>
@@ -51,6 +51,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
             <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-web</artifactId>
+            <version>2.10.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -128,7 +133,7 @@
             <artifactId>zookeeper</artifactId>
             <version>${zookeeper.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
+<!--         https://mvnrepository.com/artifact/com.101tec/zkclient-->
         <dependency>
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>

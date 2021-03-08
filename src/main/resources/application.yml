@@ -1,5 +1,6 @@
 server:
-  context-path: /springDemo
+  servlet:
+    context-path: /springDemo
 
 mybatis:
   typeAliasesPackage: lxm.model
