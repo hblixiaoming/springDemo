@@ -1,4 +1,4 @@
-package lxm.processor;
+package lxm.test.processor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
